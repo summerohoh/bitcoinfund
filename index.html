@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <title>BitCoinFund</title>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <!--custom styling -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/dashboard.css">
+
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+
+      <main role="main" class="col-md-9 mx-auto col-lg-10 px-4">
+
+        <header>
+          <div class="row flex-nowrap">
+            <div class="col-12">
+              <a id="title" href="#">BitCoinFund Korea</a>
+            </div>
+          </div>
+        </header>
+
+        <div class="col-md-12 pt-3 px-0">
+            <p class="col-md-5 px-0 subtext"> 암호화폐 시장의 가격 추이를 종합적으로 나타내기 위해 산출되는 지수로서,
+              대표적인 암호화폐 8개 가격의 움직임을 시가총액 가중 방식으로 산출 합니다.
+            </p>
+            <div id="index" class="col-md-8 row">
+              <span id="index-number"> 644.03 </span>
+              <span id="index-change"> ▼-8.12 </span>
+              <span id="index-percent"> -1.25% </span>
+            </div>
+        </div>
+
+        <div class="col-md-12 my-5 px-0">
+          <canvas class="" id="myChart" width="900" height="380"></canvas>
+        </div>
+
+        <div class="col-md-12 my-5 px-0">
+          <h3>Index 구성</h3>
+          <div class="table-responsive">
+            <table id="index-table" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Currency</th>
+                  <th scope="col">Price (USD)</th>
+                  <th scope="col">Qty</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>
+                    <img class="currency-logo" src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" alt="Bitcoin">
+                    비트코인 (BTC)
+                  </td>
+                  <td>11154</td>
+                  <td>1.762</td>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <td>
+                    <img class="currency-logo" src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" alt="Bitcoin">
+                    비트코인 (BTC)
+                  </td>
+                  <td>11154</td>
+                  <td>1.762</td>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <td>
+                    <img class="currency-logo" src="https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png" alt="Bitcoin">
+                    비트코인 (BTC)
+                  </td>
+                  <td>11154</td>
+                  <td>1.762</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+
+  </div>
+</body>
+
+
+  <footer class="text-muted">
+    <div class="container-fluid col-md-9 col-lg-10">
+<!--mute for now
+      <p class="mx-auto">
+-->
+        <a href="#">Back to top</a>
+      </p>
+    </div>
+  </footer>
+
+
+
+  <!-- load the js library -->
+
+  <!-- External JS libraries -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

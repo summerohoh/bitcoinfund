@@ -1,0 +1,84 @@
+html{
+  font-size: 15px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+main{
+  padding-top: 50px;
+}
+
+
+
+/*
+ * Content
+ */
+
+
+#title {
+  text-decoration: none;
+  color: #000;
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+
+.subtext{
+  color:#6C6C6C;
+}
+
+#index{
+  line-height: 1;
+}
+
+#index-number{
+  font-weight: 300;
+  font-size: 4rem;
+  color:#4286F9;
+  padding-right: 15px;
+}
+
+#index-change, #index-percent{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  color:#4286F9;
+  padding: 0 10px;
+}
+
+.table thead th{
+  line-height: 20px;
+  border-bottom: 1.5px solid  #6C6C6C;
+}
+
+.table th, .table td{
+  border-top: none;
+}
+
+#index-table tr{
+  line-height: 50px;
+}
+
+img.currency-logo{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+/*
+ * responsive
+ */
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+}
